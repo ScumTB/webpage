@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScumTB的主页</title>
+</head>
+<style>
+    body {
+        background: url(./images/bg02.jpg) no-repeat center center fixed;
+        background-size: cover;
+
+
+    }
+ 
+  
+    
+   
+</style>
+<body>
+
+    <div id="main">
+        <div style="width:300px; height:120px; position:absolute;left:92%;top:8%;">
+         <audio id="music2" src="./images/1.mp3"  loop="loop">你的浏览器不支持audio标签。</audio>
+         <a href="javascript:playPause();"><img src="./images/start.svg" width="48" height="50" id="music_btn2" border="0"></a>
+        </div>
+     </div>
+     <script>
+     function playPause() {
+         var music = document.getElementById('music2');
+         var music_btn = document.getElementById('music_btn2');
+         if (music.paused){
+             music.play();
+             music_btn.src = "./images/music.svg";
+         }
+         else{
+             music.pause();
+             music_btn.src = './images/start.svg'; 
+         }
+     }
+     </script>
+
+
+    
+</body>
+</html>
