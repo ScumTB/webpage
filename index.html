@@ -11,8 +11,9 @@
 <body>
 
     <div id="main">
-        <div style="width:300px; height:120px; position:absolute;left:92%;top:8%;">
-         <audio id="music2" src="./images/1.mp3"  loop="loop">你的浏览器不支持audio标签。</audio>
+        <div style="height:120px; position:absolute;left:92%;top:8%;">
+        
+         <audio id="music2" src="./images/1.mp3"  loop="loop" >你的浏览器不支持audio标签。</audio>
          <a href="javascript:playPause();"><img src="./images/start.svg" width="48" height="50" id="music_btn2" ></a>
         </div>
      </div>
@@ -22,7 +23,7 @@
          var music_btn = document.getElementById('music_btn2');
          if (music.paused){
              music.play();
-             music_btn.src = "./images/music.svg";
+             music_btn.src = "./images/music.svg"
          }
          else{
              music.pause();
